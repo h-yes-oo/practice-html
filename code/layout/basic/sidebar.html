@@ -1,0 +1,67 @@
+<!--@css(/layout/basic/css/slideMenu.css)-->
+<!--@js(/layout/basic/js/slide_menu.js)-->
+<aside id="aside" module="layout_slidePackage" style="visibility: visible;">
+    <div class="top_util">
+        <div module="Layout_stateLogon" class="nam">
+            <a href="/myshop/index.html">
+                <span>{$name}</span>
+            </a>
+            님 환영합니다.
+        </div>
+        <div module="Layout_stateLogoff" class="nam">
+            <p>고객님은 현재 로그아웃중입니다.<p/>
+        </div>
+        <ul>
+            <li class="hmm">
+                <a module="Layout_stateLogon" href="{$action_logout}">LOGOUT</a>
+                <a module="Layout_stateLogoff" href="/member/login.html">LOGIN</a>
+            </li>
+            <li>
+                <a module="Layout_stateLogon" href="/myshop/index.html">MY PAGE</a>
+                <a module="Layout_stateLogoff" href="/member/agreement.html">JOIN</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="/order/basket.html">CART</a>
+            </li>
+            <li>
+                <a href="/myshop/order/list.html">ORDER</a>
+            </li>
+        </ul>
+    </div>    
+    <div class="lt_menu">
+        <ul>
+            <li class="m_cate sel">
+                <a href="#">PRODUCT</a>
+            </li>
+            <li class="m_coom">
+                <a href="#">CS CENTER</a>
+            </li>
+        </ul>
+    </div>
+    <div id="slideCateList" class="categoryCont" style="display: block;">
+        <ul class="categoryList">
+            <li><a href="/product/list_thumb.html?cate_no=24">모든 제품</a></li>
+            <li><a href="/shopinfo/company.html">라끄블루 이야기</a></li>
+        </ul>
+    </div>
+    <div id="slideCateList" class="co" style="display: none;">
+        <ul class="categoryList">
+            <li><a href="/board/free/list.html?board_no=3">FAQ</a></li>
+            <li><a href="/board/free/list.html?board_no=6">QnA</a></li>
+            <li><a href="/board/product/list.html?board_no=4">REVIEW</a></li>
+            <li><a href="/board/free/list.html?board_no=1">NOTICE</a></li>
+        </ul>
+    </div>
+    <div class="lb">   
+        <div class="joinc">3,000원 할인 쿠폰 받기</div>
+        <div class="l_info">
+            <p class="tit">CS CENTER</p>
+            <p class="tel "><a href="tel:02-568-0739">02-568-0739</a></p>
+            <p class="tel ">contact@breadnrose.com</p>
+            <br><p style="color: #949494;">WORK : MONDAY – FRIDAY<br>OPEN : AM 09:00 ~ PM 17:00<br>LUNCH : PM 12:00 ~ PM 13:00</p>
+        </div>
+    </div>
+    <a href="#none" class="btnClose"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_close.png" width="13" alt="닫기"></a>
+</aside>
