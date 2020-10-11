@@ -1,0 +1,457 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/layout/basic/css/list.css)-->
+
+<style>
+    .contents {margin-top: 0px;}
+    
+    .xans-product-listmain-1 .thumbnail{
+    	margin-bottom:12px;
+    }
+    .xans-product-listmain-1 .name{
+    	margin-bottom:12px;
+    }
+    .xans-product-listmain-1 .price{
+    	margin-bottom:12px;
+    }
+    
+    .kakao-float {
+        position: fixed;
+        right:20px;
+        bottom:20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        border: solid 1px rgba(0, 0, 0, 0.06);
+        background-image: linear-gradient(to bottom, #ffde3e, #ffd33e);
+    }
+
+    .kakao-icon{
+        width: 23px;
+        margin-left:8px;
+        margin-top: 9px;
+        height: 25px;
+        object-fit: contain;
+    }
+</style>
+
+
+
+
+<!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+사이트 오작동의 원인이 될 수 있습니다. -->
+<div module="Product_menupackage"class="product_menupackage"><div class="path"module="product_headcategory"style="display:none"><script type="text/javascript">var gtag_productListSub=[];var gtag_productListSubClick=[];function getParameterByName(name){name=name.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var regex=new RegExp("[\\?&]"+name+"=([^&#]*)"),results=regex.exec(location.search);return results===null?"":decodeURIComponent(results[1].replace(/\+/g," "))};var pageNumber=getParameterByName('page');var Page_="Page";var pageNumber=Page_.concat("_",pageNumber);if(getParameterByName('page')==""){var pageNumber=Page_.concat("_1")}else{var pageNumber=pageNumber};var cat11='{$name_1}';var cat22='{$name_2}';var cat33='{$name_3}';var cat44='{$name_4}';if(cat11!=""&&cat22!=""&&cat33!=""&&cat44!=""){var category_name=cat11.concat(" > ",cat22," > ",cat33," > ",cat44," > ",pageNumber);var list_name=cat11.concat(" > ",cat22," > ",cat33," > ",cat44)}else if(cat11!=""&&cat22!=""&&cat33!=""&&cat44==""){var category_name=cat11.concat(" > ",cat22," > ",cat33," > ",pageNumber);var list_name=cat11.concat(" > ",cat22," > ",cat33)}else if(cat11!=""&&cat22!=""&&cat33==""&&cat44==""){var category_name=cat11.concat(" > ",cat22," > ",pageNumber);var list_name=cat11.concat(" > ",cat22)}else if(cat11!=""&&cat22==""&&cat33==""&&cat44==""){var category_name=cat11.concat(" > ",pageNumber);var list_name=cat11}else if(cat11==""&&cat22==""&&cat33==""&&cat44==""){var category_name='etc'.concat(" > ",pageNumber);var list_name='etc'};var category_arry='MO - '.concat(list_name);var list_name='MO - '.concat(category_name);</script></div></div>
+<!-- 191204 script end -->
+
+<div class="store_image1">
+    
+</div>
+
+<div class="our_product" id="cate_no_57">
+    <div class="title">
+        <p>구강건강</p>
+    </div>
+    <div class="mPrdList typeThumb" module="product_listmain_2">
+        <!--@css(/css/module/product/6/listmain_2.css)-->
+        <!--
+            $count = 9
+            $moreview = yes
+        -->
+        <ul class="grid2">
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">
+                        
+                        {$product_price|numberformat}
+                        <span class="{$product_price_ref_display|display}">
+                            {$txt_product_price_ref}
+                        </span>
+                    </p>
+                    
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="our_product" id="cate_no_24">
+    <div class="title">
+        <p>여성건강</p>
+    </div>
+    <div class="mPrdList typeThumb" module="product_listmain_1">
+        <!--@css(/css/module/product/6/listmain_1.css)-->
+        <!--
+            $count = 9
+            $moreview = yes
+        -->
+        <ul class="grid2">
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">
+                        
+                        {$product_price|numberformat}
+                        <span class="{$product_price_ref_display|display}">
+                            {$txt_product_price_ref}
+                        </span>
+                    </p>
+                    
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="our_product" id="cate_no_58">
+    <div class="title">
+        <p>다이어트</p>
+    </div>
+    <div class="mPrdList typeThumb" module="product_listmain_7">
+        <!--@css(/css/module/product/6/listmain_7.css)-->
+        <!--
+            $count = 9
+            $moreview = yes
+        -->
+        <ul class="grid2">
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">
+                        
+                        {$product_price|numberformat}
+                        <span class="{$product_price_ref_display|display}">
+                            {$txt_product_price_ref}
+                        </span>
+                    </p>
+                    
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="our_product" id="cate_no_59">
+    <div class="title">
+        <p>피부건강</p>
+    </div>
+    <div class="mPrdList typeThumb" module="product_listmain_9">
+        <!--@css(/css/module/product/6/listmain_9.css)-->
+        <!--
+            $count = 9
+            $moreview = yes
+        -->
+        <ul class="grid2">
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">
+                        
+                        {$product_price|numberformat}
+                        <span class="{$product_price_ref_display|display}">
+                            {$txt_product_price_ref}
+                        </span>
+                    </p>
+                    
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="our_product" id="cate_no_62">
+    <div class="title">
+        <p>일상건강</p>
+    </div>
+    <div class="mPrdList typeThumb" module="product_listmain_8">
+        <!--@css(/css/module/product/6/listmain_8.css)-->
+        <!--
+            $count = 9
+            $moreview = yes
+        -->
+        <ul class="grid2">
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">
+                        
+                        {$product_price|numberformat}
+                        <span class="{$product_price_ref_display|display}">
+                            {$txt_product_price_ref}
+                        </span>
+                    </p>
+                    
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="price {$summary_desc|display} ">{$summary_desc}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="our_product" id="cate_no_52">
+    <div class="title">
+        <p>기타상품</p>
+    </div>
+    <div class="mPrdList typeThumb" module="product_listmain_3">
+        <!--@css(/css/module/product/6/listmain_3.css)-->
+        <!--
+            $count = 9
+            $moreview = yes
+        -->
+        <ul class="grid2">
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">
+                        {$product_price|numberformat}
+                        <span class="{$product_price_ref_display|display}">
+                            {$txt_product_price_ref}
+                        </span>
+                    </p>
+                    
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price|numberformat} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+                        <!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+                        ※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+                        페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+                        사이트 오작동의 원인이 될 수 있습니다. -->
+                        <script type="text/javascript">var prdName = '{$product_name}'.replace(/(<([^>]+)>)/ig,"");var prdPrice = '{$product_price}'.replace(/(<([^>]+)>)/ig,""); gtag_productListSub.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry, "list_position": pageNumber, "quantity": 1,"price": prdPrice}); gtag_productListSubClick.push({"id": "{$product_no}","name": prdName,"list_name": list_name,"brand": "{$prd_brand}","category": category_arry,"list_position": pageNumber,"quantity": 1,"price": prdPrice});</script>
+                        <!-- 191204 script end -->                  
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="kakao-float" onClick="window.open('http://pf.kakao.com/_aUhkxl')">
+    <img class="kakao-icon" src="/assets/kakao-icon@2x.png"/>
+</div>
+
+<!-- 191204 스크립트 작업 시작 / 수정 이동 문의 (스크립트 설치 전문 개밥그릇 - 카카오 : https://open.kakao.com/o/smDtHyX )
+※※※※※※※※※※※※※※※※ 주의사항 ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+페이지별 / 각 사이트별 (다른사이트 포함) 코드들이 달라질 수 있기 때문에 절대로 복사 붙여넣기 또는 코드 수정을 하지 마세요.
+사이트 오작동의 원인이 될 수 있습니다. -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script><script type="text/javascript">window.dogj=jQuery.noConflict(true);</script><script type="text/javascript">if(gtag_productListSub.length>0){var maxProducts=10;while(gtag_productListSub.length){var gtag_item_lists=gtag_productListSub.splice(0,maxProducts);gtag('event','view_item_list',{"items":gtag_item_lists})}};dogj(function(){dogj('a').click(function(e){var nono=dogj(this).attr('href');var params1=nono.split("=");var params2=params1[1].split("&");var params2=params2[0];var list_count=gtag_productListSubClick.length;for(i=0;i<list_count;i++){var idpick=gtag_productListSubClick[i].id;if(idpick==params2){gtag('event','select_content',{'content_type':'product','items':[gtag_productListSubClick[i]]});break}}})});</script>
+<!-- 191204 script end -->
+
+
+
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+	const cateNo = urlParams.get('cate_no');
+    const cateDom = document.getElementById("cate_no_"+cateNo)
+    if(cateNo != null && cateDom != null){
+		
+    	const arr = Array.from(document.getElementsByClassName("our_product"))
+        arr.forEach(ele => ele.style.display="none")
+		cateDom.style.display="block"
+    }
+</script>

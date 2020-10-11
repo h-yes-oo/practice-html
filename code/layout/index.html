@@ -1,0 +1,475 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style> 
+    /* 제품 썸네일 및 링크 큰 제목 */
+    .product-title{
+        margin:auto;
+        margin-top:40px;
+        height: 24px;
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #222222;
+    }
+    /* 제품 썸네일 및 링크 작은 제목 */
+    .product-title-detail{
+        margin:auto;
+        margin-top:5px;
+        margin-bottom:40px;
+        height: 17px;
+        font-size: 14px;
+        font-weight: 200;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #999999;
+    }
+    /* 배너 아래 
+    .our_product{
+    	margin-bottom:30px;
+    }
+    .xans-product-listmain-10 .thumbnail{
+    	margin-bottom:12px;
+    }
+    .xans-product-listmain-10 .name{
+    	margin-bottom:12px;
+    }
+    .xans-product-listmain-10 .price{
+    	margin-bottom:12px;
+    }
+    .xans-product-listmain-10 .grid2 li { width:50%; }
+	ul.grid2 {
+        background-color:#fff;
+    }
+
+    .xans-product-listmain-10 { padding:0; background-color:#fff; }
+    .xans-product-listmain-10 h2 { max-height:43px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:15px; line-height:43px; padding:0 42px 0 14px; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_title_close.gif") no-repeat right 14px top 50%; background-size:13px 8px; cursor:pointer; }
+    .xans-product-listmain-10 img { max-width:100%; }
+    .xans-product-listmain-10 li { vertical-align:top; }
+    .xans-product-listmain-10 > ul > li > ul { display:table; table-layout:fixed; width:100%; box-sizing:border-box; padding:0 7px; font-size:0; line-height:0; }
+    .xans-product-listmain-10 > ul > li > ul > li { position:relative; display:inline-block; margin:0 0 14px; vertical-align:top; font-size:12px; line-height:1.4; }
+    /* swipe 기능을 사용하지않는경우 */
+    .xans-product-listmain-10 > ul[class*="grid"] { display:table; table-layout:fixed; width:100%; box-sizing:border-box; padding:0 7px; font-size:0; line-height:0; }
+    .xans-product-listmain-10 > ul[class*="grid"] > li { position:relative; display:inline-block; margin:0 0 14px; vertical-align:top; font-size:12px; line-height:1.4; }
+    .xans-product-listmain-10 .thumbnail { padding:0 7px; margin:0 0 14px; }
+    .xans-product-listmain-10 .thumbnail img { width:100%; border:1px solid #ededed; }
+    .xans-product-listmain-10 .information { position:relative; min-height:10px; margin:0 7px; line-height:1em; text-align:left;}
+    .xans-product-listmain-10 .name { line-height:1.2em; word-wrap:break-word; margin:0 0 6px; }
+    .xans-product-listmain-10 .name a { font-size:13px; color:#1b1b1b; }
+    .xans-product-listmain-10 .icon { margin:0 0 6px; }
+    
+    .xans-product-listmain-10 .price { font-size:12px; margin:0 0 6px; color:#222222; }
+    .xans-product-listmain-10 .strike { text-decoration:line-through; }
+    
+    .xans-product-listmain-10 .color { overflow:hidden; margin:0; }
+    .xans-product-listmain-10 .color .chips { float:left; width:12px; height:10px; margin:0 2px 2px 0; font-size:0; line-height:0; }
+
+    .sale{
+        border-top: 0.5px solid #3f3f3f; 
+        padding-top:50px;
+        text-align: center;
+    }
+    .sale .title{
+        font-size: 20px;
+        font-weight:bold;color: #222222
+    }
+    .sale .content{
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 14px;
+        color: #999999
+    }
+    .sale img{
+        width:100%;
+        margin-top:-20px
+    }
+    
+    .reviews {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .reviews .title {
+        margin-top:20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #222222;
+    }
+
+    .reviews .content {
+        font-size: 14px;
+        margin-top:15px;
+        color: #999999;
+    }
+
+    .reviews img.grid {
+        width:100%;
+        padding: 5px;
+        box-sizing:border-box;
+    }
+
+    .reviews .first {
+        margin-top:30px;
+    }
+
+    .reviews .second {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .reviews .second .one-third img{
+        width:100%;
+        height:33vw;
+    }
+
+    .reviews .second .title {
+        font-size: 14px;
+        color: #222222;
+    }
+
+    .reviews .second .content {
+        font-size: 13px;
+        color: #999999;
+        line-break: anywhere;
+        padding:2.5px;
+    }
+
+    .reviews .more-reviews {
+        margin-top:25px;
+        margin-right:auto;
+        margin-left:auto;
+        width: 157px;
+        height: 42px;
+        border-radius: 21px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-bottom:30px;
+    }
+    .reviews .more-reviews p{
+        font-weight: bold;
+    	line-height: 42px;
+        font-size: 15px;
+        color: #222222;
+        display:contents;
+    }
+    .reviews .more-reviews img{
+    	margin-left:5px;
+        margin-bottom:5px;
+    }
+
+    .brand {
+        border-top: 0.5px solid #3f3f3f; 
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .brand .title {
+        margin-top:40px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .brand .slogan{
+        margin-top: 10px;
+        color: #999999;
+        font-size: 14px;
+    }
+
+    .brand img.main {
+        margin-top: 30px;
+        width: 100%;
+        height: 220px;
+        object-fit:cover;
+    }
+    .brand .content-title{
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .brand .content{
+        margin-top: 10px;
+        font-size: 14px;
+        color: #000000;
+        line-height:1.5;
+    }
+
+    .brand .story-btn {
+        margin-top: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 207px;
+        height: 42px;
+        border-radius: 21px;
+        border: solid 1px #dbdbdb;
+        background-color: #ffffff;
+        margin-bottom: 30px;
+    }
+    .brand img.story-btn{
+    	margin-bottom:5px;
+        margin-left:3px;
+    }
+
+    .brand .story-btn p {
+        font-weight: bold;
+        line-height: 42px;
+        font-size: 15px;
+        color: #222222;
+        display:contents;
+    }
+    .brand .story-btn img{
+    	margin-left:5px;
+        margin-bottom: 5px;
+    }
+</style>
+
+<style>
+.mainBanner { padding:10px 0 0; }
+.mainBanner a { display:block; }
+.mainBanner img { width:100%; }   
+</style>
+
+<div class="mainBanner" module="Mobile_Banner">
+    <!--
+        $swipe = yes
+        $custom = no
+    -->
+    <ul>        
+        <li><a href="{$banner_link_url}"><img src="{$banner_image_url}" width="100%" alt=""></a></li>
+        <li class="afterNone"><a href="{$banner_link_url}"><img src="{$banner_image_url}" width="100%" alt=""></a></li>
+    </ul>
+</div>
+
+<div moduel="layout_logincheck">
+    <!--
+        $url = /member/login.html
+        ※ 로그인 후, 이동할 페이지 url을 지정할 수 있는 변수
+    -->
+</div>
+
+<!--@css(/css/carousel.css)-->
+
+<style>
+    .grid1 {
+    position: relative;
+  	width: 100%;
+  	height: 100vw;
+    }
+    /*
+    .grid1 .mainText {
+        position: relative;
+        top: 328px;
+        margin: auto;
+    }
+
+    .grid1 .mainText .title {
+
+        margin: auto;
+        min-height: 30px;
+        font-family: Adobe-Garamond-Pro;
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+        color: #222222;
+    }
+
+    .grid1 .mainText .slogan {
+
+        margin: auto;
+        padding-top: 5px;
+        max-width: 589px;
+        min-height: 26px;
+        font-family: Noto Sans KR;
+        font-size: 12px;
+        line-height: 2.2;
+        text-align: center;
+        color: #222222;
+    }
+
+    .grid1 .mainText .info {
+
+        margin: auto;
+        margin-top: 15px;
+        width: 80px;
+        height: 33px;
+        border: 1px solid #222222;
+
+        font-family: Noto Sans KR;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+        color: #222222;
+        line-height: 33px;
+    }  
+    */
+
+    .grid1 .carousel {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .grid1 .banner {
+        width: 100%;
+        height: 100vw;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .grid1 .b1 {
+        background-image: url("/banner/7-sale.png");
+    }
+    .grid1 .b2 {
+        background-image: url("/banner/1-vitaminD.png");
+    }
+    .grid1 .b3 {
+        background-image: url("/banner/9-betterdayPlus.png");
+    }
+    .grid1 .b4 {
+        background-image: url("/banner/10-fall-gift-event.png");
+    }
+    .grid1 .b5 {
+        background-image: url("/banner/7-sale.png");
+    }
+    .grid1 .b6 {
+        background-image: url("/banner/9-betterdayPlus.png");
+    }
+
+</style>
+
+
+<div class="grid1">
+    <div class="carousel siema">
+        <div class="banner b1" onclick="window.location='';">
+        </div>
+        <div class="banner b2" onclick="window.location='';">
+        </div>
+        <div class="banner b3" onclick="window.location='';">
+        </div>
+        <div class="banner b4" onclick="window.location='';">
+        </div>
+        <div class="banner b5" onclick="window.location='';">
+        </div>
+        <div class="banner b6" onclick="window.location='';">
+        </div>
+    </div>
+</div>
+
+
+<div class="our_product" id="cate_no_10">
+    <div class="dot-container">
+        <span class="dot active " id="0" onClick="mySiema.goTo(0)"></span> 
+        <span class="dot" id="1" onClick="mySiema.goTo(1)"></span>
+        <span class="dot" id="2" onClick="mySiema.goTo(2)"></span>
+        <span class="dot" id="3" onClick="mySiema.goTo(3)"></span>
+        <span class="dot" id="4" onClick="mySiema.goTo(4)"></span>
+        <span class="dot" id="5" onClick="mySiema.goTo(5)"></span>
+    </div>
+    
+    <p class="product-title">제품 썸네일 및 링크</p>
+    <p class="product-title-detail">제품 상세</p>
+
+    <div class="mPrdList typeThumb" module="product_listmain_1">
+        <!--@css(/css/module/product/listmain_1.css)-->
+        <!--
+            $count = 9
+            $moreview = yes
+        -->
+        <ul class="grid3">
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt=""></a></div>
+                <div class="information">
+                    <p class="name {$product_name_display|display}"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+                    <p class="icon">{$soldout_icon} {$new_icon} {$recommend_icon} {$product_icons}</p>
+                    <p class="price {$product_price_display|display} {$product_sale_strike}">{$product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span></p>
+                    <p class="price {$product_sale_display|display}">{$product_sale_price}</p>
+                    <div class="{$colorchip_display|display}">
+                        <div class="color" module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};"></span>
+                            <span class="chips" style="background-color:{$color};"></span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="sale">
+        <p class="title">
+            혜택
+        </p>
+        <p class="content">
+            혜택 상세
+        </p>
+        <img src="/assets/sale-1@3x.png"/>
+        <img src="/benefit banner/6)____.png"/>
+    </div>
+	<a href="/board/product/list.html?board_no=4">
+        <div class="reviews">
+            <p class="title">제품후기</p>
+            <p class="content">실제 구매 고객의 후기를 확인하세요</p>
+            <div class="first"><img class="grid" src="/assets/review-img-01@2x.png"></div>
+            <div class="second">
+                <div class="one-third">
+                    <img class="grid" src="/assets/review-img-02@2x.png">
+                    <p class="title">
+                        후기1
+                    </p>
+                    <p class="content">
+                        후기 내용1
+                    </p>
+                </div>
+                <div class="one-third">
+                    <img class="grid" src="assets/review-img-03@2x.png">
+                    <p class="title">후기2</p>
+                    <p class="content">
+                        후기 내용2
+                    </p>
+                </div>
+                <div class="one-third">
+                    <img class="grid" src="assets/review-img-04@2x.png">
+                    <p class="title">후기3</p>
+                    <p class="content">
+                        후기 내용3
+                    </p>
+                </div>
+            </div>
+            <div class="more-reviews">
+                <p>후기 더보기</p><img src="/assets/more-3.png">
+            </div>
+        </div>
+	</a>
+    <div class="brand">
+        <p class="title">브랜드 스토리</p>
+        <p class="slogan">브랜드 슬로건</p>
+        <img class="main" src="/assets/brand_image11.jpg">
+        <p class="content-title">브랜드 소개</p>
+        <p class="content">브랜드 상세 소개</p>
+        <a href="/shopinfo/company.html">
+            <div class="story-btn">
+                <p>브랜드 스토리 더보기</p><img src="/assets/more-3.png">
+            </div>
+        </a>
+    </div>
+<!--@js(/js/carousel.js)-->
