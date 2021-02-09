@@ -1,0 +1,163 @@
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/Users/hyesoo/Desktop/practice-html/code/infiniteSlider.js"></script>
+    </head>
+
+
+    <body>
+        <script>
+        </script>
+        <style>
+
+        * { box-sizing: border-box; }
+
+        .slider {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 600px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+        }
+
+        .wrapper {
+            overflow: hidden;
+            position: relative;
+            width: 100vw;
+            height: 600px;
+            z-index: 1;
+        }
+
+        .slides {
+            display: flex;
+            position: relative;
+            top: 0;
+            left: -100vw;
+            width: 10000vw;
+        }
+
+        .slides.shifting {
+            transition: left .2s ease-out;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            cursor: pointer;
+            transition: all 1s;
+        }
+
+        .prev,
+        .next {
+            background-size: 22px;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            height: 26px;
+            width: 13px;
+            margin-right: 43px;
+        }
+
+        .prev {
+            background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+        }
+
+        .next {
+            background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+        }
+
+        .s1 {
+            background: pink;
+        }
+        .s2 {
+            background: orange;
+        }
+        .s3 {
+            background: purple;
+        }
+        .s4 {
+            background: blue;
+        }
+        .s5 {
+            background: yellow;
+        }
+
+            .smallText {
+        font-family: AppleSDGothicNeo;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.42px;
+        color: #ffffff;
+        padding-left: 12%;
+    }
+    
+    .largeText {
+        margin: 10px 12% 171px;
+        font-family: GmarketSansTTF;
+        font-size: 40px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.28;
+        letter-spacing: -0.85px;
+        color: #ffffff;
+    }
+    
+    .bannerBtnWrapper{
+        position:absolute;
+        left:12%;
+        bottom: 104px;
+        z-index:100;
+        height: 26px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        </style>
+
+        <div id="slider" class="slider">
+            <div class="wrapper">
+                <div id="slides" class="slides">
+                    <div class="slide s1">
+                        <div class="smallText">출시기념 이벤트</div>
+                        <div class="largeText">1111111</div>
+                    </div>
+                    <div class="slide s2">
+                        <div class="smallText">두번째 슬라이드</div>
+                        <div class="largeText">
+                            222222<br/>
+                            일이삼사오육칠팔구십
+                        </div>
+                    </div>
+                    <div class="slide s3"><div class="smallText">두번째 슬라이드</div>
+                    <div class="largeText">
+                        3333333<br/>
+                        일이삼사오육칠팔구십
+                    </div></div>
+                    <div class="slide s4"><div class="smallText">두번째 슬라이드</div>
+                    <div class="largeText">
+                        4444444<br/>
+                        일이삼사오육칠팔구십
+                    </div></div>
+                    <div class="slide s5"><div class="smallText">두번째 슬라이드</div>
+                    <div class="largeText">
+                        55555<br/>
+                        일이삼사오육칠팔구십
+                    </div></div>
+                </div>
+            </div>
+            <div class="bannerBtnWrapper">
+                <a id="prev" class="prev"></a>
+                <a id="next" class="next"></a>
+            </div>
+        </div>
+    </body>
+</html>
