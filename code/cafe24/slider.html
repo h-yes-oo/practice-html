@@ -1,0 +1,136 @@
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <!--<script src="/js/my.js"></script>-->
+
+    </head>
+
+
+    <body>
+
+        <style>
+
+        #wrapper{
+            position:relative;
+            color:#fff;
+            text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;
+            margin:0; padding:0; list-style:none;
+        }
+
+        #slider-wrap{
+            height:27px;
+            position:relative;
+            overflow:hidden;
+            margin:0; padding:0; list-style:none;
+        }
+
+        #slider-wrap ul#slider{
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;   
+            display: flex;
+            margin:0; padding:0; list-style:none;
+        }
+
+        #slider-wrap ul#slider li{
+            float:left;
+            position:relative;
+            width:100%;
+            height:27px; 
+            margin:0; padding:0; list-style:none;
+        }
+
+
+        /*ANIMATION*/
+        #slider-wrap ul {
+            /*
+            -webkit-transition: all 2.5s cubic-bezier(0.825, 0.085, 0.095, 0.930);
+            -moz-transition: all 2.5s cubic-bezier(0.825, 0.085, 0.095, 0.930);
+            -o-transition: all 2.5s cubic-bezier(0.825, 0.085, 0.095, 0.930);
+            -ms-transition: all 2.5s cubic-bezier(0.825, 0.085, 0.095, 0.930);
+            transition: all 2.5s cubic-bezier(0.825, 0.085, 0.095, 0.930);
+            */
+            transition-duration: 1.2s;
+            margin:0; padding:0; list-style:none;
+            
+        }
+
+         /*최상단의 쿠폰 증정 영역의 크기 - 없애고 싶을때에 height와 line-height 모두 0으로 지정*/
+        .coupon-margin{
+        	height:27px;
+            line-height:27px;
+        }
+        /*최상단 쿠폰 증정 영역의 색상*/
+         .top-coupon{
+             background-color:#252525; /*쿠폰 버튼 영역 배경 색상*/
+             color: #ffffff;  /*쿠폰 버튼 문구 색상*/
+             font-size: 12px;  /*쿠폰 버튼 문구 크기*/
+             text-align:center; 
+        }
+
+
+        </style>
+
+        <script>
+        var pos = 0;
+        //number of slides
+        var totalSlides = $('#slider-wrap ul li').length;
+        //get the slide width
+        var sliderWidth = $('#slider-wrap').width();
+
+
+
+        $(document).ready(function(){
+
+            pos = 0;
+            //number of slides
+            totalSlides = $('#slider-wrap ul li').length;
+            //get the slide width
+            sliderWidth = $('#slider-wrap').width();
+
+            $('#slider-wrap ul#slider').width(sliderWidth*totalSlides);
+            
+            var autoSlider = setInterval(slideRight, 3000*(totalSlides-1));
+            
+
+        });
+        
+
+        function slideRight(){
+            pos++;
+            if(pos==totalSlides){ 
+                pos = 0; 
+                $('#slider-wrap ul#slider').css('transform', `translate3d(-${sliderWidth*pos}px, 0px, 0px)`); 
+                $('#slider-wrap ul#slider').css('transition-duration', '0s'); 
+            } else {
+                //$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 
+                $('#slider-wrap ul#slider').css('transform', `translate3d(-${sliderWidth*pos}px, 0px, 0px)`); 
+                $('#slider-wrap ul#slider').css('transition-duration', '0.6s'); 
+            }
+        }
+
+            
+        </script>
+
+        <div id="wrapper">
+            <div id="slider-wrap">
+                <ul id="slider">
+                    <li>         
+                        <div class="top-coupon coupon-margin">15시 이전 주문시 당일 출고</div>
+                    </li>
+                    <li>
+                        <div class="top-coupon coupon-margin">카톡 친구추가시 10% 할인쿠폰 증정</div>
+                    </li>
+                    <li>
+                        <div class="top-coupon coupon-margin">15시 이전 주문시 당일 출고</div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+   </body>
+</html>
