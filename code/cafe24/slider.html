@@ -93,6 +93,10 @@
             sliderWidth = $('#slider-wrap').width();
 
             $('#slider-wrap ul#slider').width(sliderWidth*totalSlides);
+
+            $(window).resize(function(){
+                sliderWidth = $('#slider-wrap').width()
+            });
             
             var autoSlider = setInterval(slideRight, 3000*(totalSlides-1));
             
